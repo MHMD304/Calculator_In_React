@@ -1,0 +1,137 @@
+#root {
+  width: 360px;
+  margin:0 auto;
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: #1e1e2f;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.calculator .result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2b2b3c;
+  padding: 1rem;
+  text-align: right;
+}
+
+.calculator .result p {
+  border-radius: 10px;
+  margin: 5px 0px;
+  padding: 10px;
+  width: 100%;
+  align-self: center;
+  background-color: #3c3c4e;
+  color: #fff;
+  min-height: 40px;
+  font-size: 1.2rem;       
+}
+
+.calculator .result .prev-operation {
+  font-size: 0.9rem;
+  color: #aaa;
+  align-self: flex-end;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0.6rem;
+  padding: 0.6rem;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.numbers button:nth-child(11) {
+  grid-column: 2 / 4; 
+}
+
+.test {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 22% 22% 47%;
+  grid-template-rows: 1fr;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.operations {
+  display: grid;
+  gap: 0.6rem;
+}
+
+button {
+  background: #3c3c4e;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #505066;
+  transform: translateY(-2px);
+}
+
+
+.operations button {
+  background: #ff8c42;
+  font-weight: bold;
+}
+
+.operations button:hover {
+  background: #ff9f63;
+}
+
+
+.test button:last-child {
+  background: #4caf50;
+  font-weight: bold;
+}
+
+.test button:last-child:hover {
+  background: #5ecf63;
+}
+
+.test button:nth-child(1) {
+  background: #e74c3c;   
+  font-weight: bold;
+}
+.test button:nth-child(1):hover {
+  background: #ff6b5a;
+}
+
+
+.test button:nth-child(2) {
+  background: #f39c12;   
+  font-weight: bold;
+}
+.test button:nth-child(2):hover {
+  background: #ffb733;
+}
+
+
+.test button:nth-child(3) {
+  background: #2ecc71;   
+  font-weight: bold;
+  font-size: 1.3rem;      
+}
+.test button:nth-child(3):hover {
+  background: #48e68b;
+}
